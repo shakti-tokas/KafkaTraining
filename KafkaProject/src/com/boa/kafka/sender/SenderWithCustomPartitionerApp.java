@@ -15,7 +15,7 @@ public class SenderWithCustomPartitionerApp {
 		props.setProperty("bootstrap.servers", "localhost:9092");
 		props.setProperty("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 		props.setProperty("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
-		props.setProperty("partitioner.class", "com.kafka.partitioner.MessagePartitioner");
+		props.setProperty("partitioner.class", "com.boa.kafka.partitioner.MessagePartitioner");
 		
 		KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
 		
