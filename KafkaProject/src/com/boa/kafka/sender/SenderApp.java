@@ -21,6 +21,7 @@ public class SenderApp {
 		KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
 		//Scanner in = new Scanner(System.in);
 		
+		//Asynchronous way of sending
 		for(int i=0;i<=4;i++) {
 			
 			//String s = in.nextLine();
